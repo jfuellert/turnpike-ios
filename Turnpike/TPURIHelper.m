@@ -33,7 +33,7 @@
     NSString *resourcePath = nil;
     
     // Strip out Query String
-    for (int i = inputString.length-1; i >= 0; i--) {
+    for (NSInteger i = inputString.length-1; i >= 0; i--) {
         if ([inputString characterAtIndex:i] == '?') {
             resourcePath = [inputString substringToIndex:i];
             queryString = [accumulatedQueryString copy];
